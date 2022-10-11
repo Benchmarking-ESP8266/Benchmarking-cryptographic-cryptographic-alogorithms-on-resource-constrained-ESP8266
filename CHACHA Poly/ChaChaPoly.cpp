@@ -4,23 +4,7 @@
 #include "utility/EndianUtil.h"
 #include <string.h>
 
-/**
- * \class ChaChaPoly ChaChaPoly.h <ChaChaPoly.h>
- * \brief Authenticated cipher based on ChaCha and Poly1305
- *
- * ChaChaPoly is an authenticated cipher based on a combination of
- * ChaCha with 20 rounds for encryption and Poly1305 for authentication.
- * The resulting cipher has a 256-bit key, a 64-bit or 96-bit
- * initialization vector, and a 128-bit authentication tag.
- *
- * Reference: https://tools.ietf.org/html/draft-irtf-cfrg-chacha20-poly1305-10
- *
- * \sa ChaCha, Poly1305, AuthenticatedCipher
- */
 
-/**
- * \brief Constructs a new ChaChaPoly authenticated cipher.
- */
 ChaChaPoly::ChaChaPoly()
 {
     state.authSize = 0;
